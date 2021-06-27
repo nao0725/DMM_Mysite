@@ -44,9 +44,24 @@ header {
   
 }
 
-main-visual {
-  width: 100%; /* 横幅いっぱい */
-  height: 650px;
+.main-visual {
+  height: auto;
+  background-image: url(mv.png);
+  background-size: contain;
+  background-size: 100%,650px;
+  background-position: center;
+  text-align: center;
+  padding-bottom :10px;
+}
+
+.main-visual-title{
+  font-size: 64px;
+  color:#fafafa
+}
+
+.main-visual-text{
+  font-size: 20px;
+  color:#fafafa
 }
 
 main {
