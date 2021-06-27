@@ -15,6 +15,10 @@ h4 {
   font-size: 20px;
 }
 
+p{
+  font-size: 16px;
+}
+
 header {
   height: 300px;
   width: 100%;
@@ -76,6 +80,12 @@ main {
   text-align: center;
 }
 
+.portfolio{
+  border-bottom: 3px solid #EC725F;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
 .mainbox{
   display: flex;
   justify-content: center;
@@ -111,41 +121,62 @@ main {
   background-position: center;
 }
 
-.img1{
+.img6{
   background-image: url(webcamp-mother.png);
   background-size: cover;
   background-position: center;
 }
 
-
-
 .box2 {
-  background-color: hotpink;
-  height: 500px;
-  width: 100%;
+  background-color: rgb(253, 250, 251);
+  text-align: center;
+  width: 980px;
+  padding:90px 0 ;
+}
+
+.feature{
+  border-bottom: 3px solid #EC725F;
+  display: inline-block;
+  padding-bottom: 8px;
 }
 
 .s-box {
+  padding-top: 30px;
   display: flex;
   justify-content: center;
 }
 
 .box3 {
-  background-color: rgb(185, 185, 185);
+  background-color:#ECEFF1);
   height: 500px;
   width: 100%;
+  text-align:center;
+}
+
+.profile{
+  border-bottom: 3px solid #EC725F;
+  display: inline-block;
+  padding-bottom: 8px;
 }
 
 .box4 {
   background-color: rgb(218, 132, 210);
   height: 500px;
   width: 100%;
+  text-align: center;
+}
+
+.content{
+  border-bottom: 3px solid #EC725F;
+  display: inline-block;
+  padding-bottom: 8px;
 }
 
 footer {
   background-color: salmon;
   height: 100px;
   width: 100%;
+  text-align: center;
 }
 footer p {
   font-size: 16px;
