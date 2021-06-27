@@ -47,7 +47,7 @@ header {
 .main-visual {
   height: auto;
   background-image: url(mv.png);
-  background-size: contain;
+  background-size: cover;
   background-size: 100%,650px;
   background-position: center;
   text-align: center;
@@ -71,10 +71,53 @@ main {
 }
 
 .box1 {
-  background-color: pink;
   height: 500px;
-  width: 100%;
+  width: 920px;
+  text-align: center;
 }
+
+.mainbox{
+  display: flex;
+  justify-content: center;
+}
+
+.img1{
+  background-image: url(sketch.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img2{
+  background-image: url(websuku.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.img3{
+  background-image: url(write.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img4{
+  background-image: url(webcamp.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.img5{
+  background-image: url(talk.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img1{
+  background-image: url(webcamp-mother.png);
+  background-size: cover;
+  background-position: center;
+}
+
+
 
 .box2 {
   background-color: hotpink;
