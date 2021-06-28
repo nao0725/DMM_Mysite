@@ -22,6 +22,7 @@ p{
 header {
   height: 300px;
   width: 100%;
+  position: relative;
 }
 
 .logo {
@@ -38,6 +39,10 @@ header {
 .nav-list{
   display: flex;
   justify-content: center;
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  list-style-type: none
 }
 
 
@@ -56,6 +61,7 @@ header {
   background-position: center;
   text-align: center;
   padding-bottom :10px;
+  line-height: ;
 }
 
 .main-visual-title{
@@ -180,4 +186,26 @@ footer {
 }
 footer p {
   font-size: 16px;
+}
+
+.social i {
+  color:black;
+}
+/* タブレット横置きサイズ（1024px）以下の際に適用される設定 */
+@media screen and (max-width:1024px) {
+  .social i {
+    color: green;
+  }
+}
+/* タブレット縦置きサイズ（768px）以下の際に適用される設定 */
+@media screen and (max-width:768px) {
+  .social i {
+    color: red;
+  }
+}
+/* スマートフォンサイズ（425px）以下の際に適用される設定 */
+@media screen and (max-width:425px) {
+  .social i {
+    color: blue;
+  }
 }

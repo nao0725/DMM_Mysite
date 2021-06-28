@@ -1,6 +1,7 @@
 
 
-<!-- NEXT:main-visualのレイアウト -->
+<!-- NEXT:第⑦章以降で実装できる箇所がないか探す -->
+<!-- →ディベロッパーツールを参照にしながらわからなかったとこを完成させていく -->
 
 <!-- 【HTML】ソースコード -->
 
@@ -8,6 +9,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!-- Font Awesomeファイルの読み込み -->
     <script src="https://kit.fontawesome.com/f03fd448b3.js" crossorigin="anonymous"></script>
     <!-- CSSファイルの読み込み -->
@@ -18,28 +20,49 @@
   <body>
 
     <header>
-      <a href="#Lorem Ipsum"><div class="logo"><img src="logo.png" alt="#"></div></a>
-      <div class="nav">
-      <ul class="nav-list">
+    <div class = "container header-group">
+      <a href="#Lorem Ipsum"><img class="logo"><img src="img/logo.png" alt="ロゴ"></a>
+
+      <div class="menu-box">
+				<span class="list-bar"></span>
+				<span class="list-bar"></span>
+				<span class="list-bar"></span>
+			</div>
+
+      <nav>
+        <ul class="nav">
+        <!-- <ul class="nav-list"> -->
           <li class="nav-logo"><a href="#Portfolio">Portfolio</a></li>
           <li class="nav-logo"><a href="#Feature">Feature</a></li>
           <li class="nav-logo"><a href="#Profile">Profile</a></li>
           <li class="nav-logo"><a href="#Contact">Contact</a></li>
+        <!-- </ul> -->
         </ul>
-      </div>
+     </nav>
+    </div>
     </header>
 
-    <div class="main-visual">
+      <div class="main-visual"> <!-- <section id="mv"></section> -->
         <h1 class="main-visual-title"> <a id ="Lorem Ipsum">Lorem Ipsum</a></h1>
         <p class="main-visual-text">simply dummy text of the printing</p>
       </div>
 
-    <main>
+<!-- <main> -->
 
-      <div class = "box1">
-        <h3 class="portfolio"> <a id ="Portfolio">Portfolio</a></h3>
-        <p>It is a long established ~~~~~</p>
+      <div class="box"> <!-- <div class = "container"> -->
+        <h3 class="heading"> <a id ="Portfolio">Portfolio</a></h3> <!--class =  "portfolio"-->
+        <p class="heading-text">	It is a long established fact that a reader will be distracted by the readable<br>
+           content of a page when looking at its layout.
+          <br class="sp-none"> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
         <div class="mainbox">
+          <!-- <div class="production-group"> -->
+            <div class="production bg-1 sp-none"></div>
+            <div class="production bg-2"></div>
+            <div class="production bg-3 sp-none"></div>
+            <div class="production bg-4"></div>
+            <div class="production bg-5 sp-none"></div>
+            <div class="production bg-6"></div>
+          <!-- </div> -->
           <!-- <div class = "img1"><img src="sketch.jpg" alt="#"></div>
           <div class = "img2"><img src="websuku.png" alt="#"></div>
           <div class = "img3"><img src="write.jpg" alt="#"></div>
@@ -49,11 +72,26 @@
         </div>
       </div>
 
-      <div class="box2">
-        <h3 class="feature"><a id ="Feature">Feature</a></h3>
-        <p>It is a long~~~~</p>
-         <br class="s-box">
-         <i class="fab fa-youtube fa-4x"></i>
+       <div class="box"> 	<!--<div class="container"></div> -->
+         <h3 class="heading"><a id ="Feature">Feature</a></h3> <!--<h3 class="feature"></h3> -->
+        <p class="heading-text">It is a long established fact that a reader will be distracted by the readable<br> content of a page when looking at its layout.<br class="sp-none"> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+          <div class="s-box"> 	<!--<div class="strength-group"> -->
+            <div class="strength">
+              <i class="fa fa-code" aria-hidden="true"></i>
+              <h3 class="strength-title">Strength1</h3>
+              <p class="strength-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
+            </div>
+            <div class="strength">
+              <i class="fa fa-desktop" aria-hidden="true"></i>
+              <h3 class="strength-title">Strength2</h3>
+              <p class="strength-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
+            </div>
+            <div class="strength">
+              <i class="fa fa-cogs" aria-hidden="true"></i>
+              <h3 class="strength-title">Strength3</h3>
+              <p class="strength-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
+            </div>
+         <!-- <i class="fab fa-youtube fa-4x"></i>
           <h4>Strength1</h4>
           <p>Contrary to popular belief,</p>
           <i class="fab fa-youtube fa-4x"></i>
@@ -61,37 +99,80 @@
           <p>Contrary to popular belief,</p>
           <i class="fab fa-youtube fa-4x"></i>
           <h4>Strength3</h4>
-          <p>Contrary to popular belief,</p>
+          <p>Contrary to popular belief,</p>-->
          </div>
+        </div> 
+      
 
 
-      <div class="box3">
-        <h3 class="profile"><a id ="Profile">Profile</a></h3>
-        <p>It is a long established fact~~~~</p>
-        <img src="my-icon.jpg" alt="#">
-        <h4>MyName</h4>
-        <p>Contrary to popular belief, ~~~~</p>
-        <h4>MySkills</h4>
+      <div class="box">
+        <h3 class="heading"><a id ="Profile">Profile</a></h3>
+        <p class="heading-text">It is a long established fact that a reader will be distracted by the readable<br> content of a page when looking at its layout.<br class="sp-none"> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+        <div class="profile-group">
+
+          <div class="left-content">
+            <div class="my-face"></div>
+          </div>
+
+          <div class="right-content"></div>
+          <h3 class="description-title">MyName</h3>
+          <p class="description-text">
+						Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur
+					</p>
+
+          <h3 class="description-title">MySkills</h3>
+					<p class="description-text">HTML/CSS,JavaScript,JQuery,PhotoShop</p>
+
+       </div>
       </div>
 
-      <div class="box4">
-        <h3 class="content"><a id ="Contact">Contact</a></h3>
-        <p>It is a long established fact that a~~~</p>
-        <h4>Mail</h4>
+        <!-- <img src="my-icon.jpg" alt="#">
+        <h4>MyName</h4>
+        <p>Contrary to popular belief, ~~~~</p>
+        <h4>MySkills</h4> -->
+
+      <div class="box">
+        <h3 class="heading"><a id ="Contact">Contact</a></h3>
+        <p class="heading-text">It is a long established fact that a reader will be distracted by the readable<br> content of a page when looking at its layout.<br class="sp-none"> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+      <div class="content-group">
+
+        <div class="left-content">
+          <div class="left-contact-content">
+            <h4 class="description-title">Mail</h4>
+             <a class="description-text link-text" href="aizawa@gmai.com">aizawa@gmai.com</a>
+            <h4 class="description-title">Tell</h4>
+             <a class="description-text link-text" href="080-1553-3705">909-1234-3221</a>
+          </div>
+        </div>
+         
+        <div class="right-content">
+          <div class="right-contact-content">
+          <h4 class="description-title">SNS</h4>
+          <i class="fab fa-twitter fa-5x"></i>
+          <i class="fab fa-facebook fa-5x"></i>
+          <i class="fab fa-instagram fa-5x"></i> 
+          </div>
+        </div>
+       </div>
+      </div>
+        <!-- <h4>Mail</h4>
         <p>aizawa@gmai.com</p>
         <h4>Tell</h4>
         <p>000-000-00000</p>
         <h4>SNS</h4>
         <i class="fab fa-twitter"></i>
         <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
-      </div>
+        <i class="fab fa-instagram"></i> -->
+      
 
-      </main>
+      <!-- </main> -->
 
     <footer>
-      <p>©︎ 2017 WebCamp</p>
+      <p class="copyright">©︎ 2017 WebCamp</p>
     </footer>
 
+    
+
+    <div id="extensionsWeblioEjBx" style="position: absolute; z-index: 2147483647; left: 378px; top: 247px;"><iframe src="//api.weblio.jp/act/quote/v_1_0/e/?q=Lorem&amp;type=emicro&amp;opul=chrome-extension%3A%2F%2Foingodpdjohhkelnginmkagmkbplgema%2Foptions.html" name="weblioExtensionsFrame" width="380" height="80" border="0" frameborder="0" scrolling="no"></iframe></div>
   </body>
 </html>
