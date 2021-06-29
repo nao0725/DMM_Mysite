@@ -62,31 +62,33 @@ header {
 }
 
 .main-visual {
-  height: auto;
+  width: 100%;
+  height: 650px;
+  text-align: center;
+  color: #FAFAFA;
   background-image: url(mv.png);
   background-size: cover;
-  background-size: 100%,650px;
   background-position: center;
-  text-align: center;
-  padding-bottom :10px;
-  line-height: ;
 }
 
 .main-visual-title{
+  padding-top: 200px;
+  font-family: 'Raleway', sans-serif;
   font-size: 64px;
   color:#fafafa
 }
 
 .main-visual-text{
+  padding-top: 10px;
   font-size: 20px;
   color:#fafafa
 }
 
-main {
+/* main {
   height: 2000px;
   width: 840px;
   margin: 0 auto;
-}
+} */
 
 .box1 {
   height: 500px;
