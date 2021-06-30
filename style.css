@@ -214,10 +214,33 @@ header {
 
 
 
-.profile{
-  border-bottom: 3px solid #EC725F;
-  display: inline-block;
-  padding-bottom: 8px;
+.profile-group{
+ display: block;
+ padding: 30px 0 30px 0 ;
+}
+
+.left-content{
+  width: 50%;
+}
+
+.right-content{
+  width: 50%;
+}
+
+.my-face{
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-image: url(/img/my-icon.jpg);
+}
+
+.description-title:first-child{
+	margin-top: 0;
+}
+
+.description-text{
+	font-size: 16px
 }
 
 .box4 {
