@@ -177,24 +177,42 @@ header {
   padding:90px 0 ;
 } */
 
-.feature{
-  border-bottom: 3px solid #EC725F;
-  display: inline-block;
-  padding-bottom: 8px;
-}
 
 .s-box {
   padding-top: 30px;
   display: flex;
-  justify-content: center;
+  width: 980px;
+  padding: 30px 0 30px 0;
+  margin: 0 auto;
 }
 
-.box3 {
-  background-color:#ECEFF1);
-  height: 500px;
-  width: 100%;
-  text-align:center;
+.strength{
+  width: 320px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 60px;
 }
+
+.strength:last-child{
+  margin-right: 0;
+}
+
+.strength-title{
+  padding: 10px 0 ;
+  font-size: 20px;
+}
+
+.strength-text{
+  text-align: left;
+  font-size: 16px;
+}
+
+#feature{
+  background-size: cover;
+  background-position:center ;
+}
+
+
 
 .profile{
   border-bottom: 3px solid #EC725F;
